@@ -11,4 +11,18 @@ img{
 
 h1 {
   font-family: "Poetsen One", sans-serif;
+  color: red
+    
+}
+
+h3{
+ font-family: falcon;
+}
+  @font-face{
+    font-family: falcon;
+    src: url(https://cdn.glitch.global/ff426738-2c49-4be6-9ed5-890e82ccc158/Facon.ttf?v=1745320086540)
+   
+  }
+p{
+  color: purple;
 }

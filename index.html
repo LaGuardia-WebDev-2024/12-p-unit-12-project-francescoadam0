@@ -1,8 +1,8 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
+[ . ] $() Select by Element, ID AND Class 
+[ . ] Use Three Different jQuery Methods 
+[ . ] Add Five CSS Declarations
 [ . ] Include Three Images
 
 Select ONE Additional 
@@ -12,7 +12,6 @@ Select ONE Additional
 [ no ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
-
 
 <!DOCTYPE html>
 <html>
@@ -34,37 +33,60 @@ Select ONE Additional
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p class="showtime">More about this memory.</p>
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p class="WD">More about this memory</p>
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
-        $("#mem1").text("Dance on the 8th Floor")
-        $("#stuff1").text("Spending time dancing on the 8th floor for 4 periods a day the last 4 years have shaped me into the person I am today, the memories created in those 4 rooms and the people I have met within those 16 walls are people and things I will cherish forever and I am so upset to leave everyone. ")
-        
+        $("#mem1").css("color", "aliceblue");
+        $("#mem1").text("Dance on the 8th Floor");
+        $("#stuff1").text(
+          "Spending time dancing on the 8th floor for 4 periods a day the last 4 years have shaped me into the person I am today, the memories created in those 4 rooms and the people I have met within those 16 walls are people and things I will cherish forever and I am so upset to leave everyone. "
+        );
+        $("body").css("background-color", "orange");
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-         $("#mem2").text("The Winter Dance Showcase")
+        $("#mem2").css("color", "aliceblue");
+        $("#mem2").text("The Winter Dance Showcase");
+        $(".showtime").hide();
+        $(".showtime").html(
+          "The Winter Dance Showcase was a 2 day / 4 show preformance with my classmates of LaG Dance 2025 which sows a culmination of self choreographed works, a 15 piece of each technique we take here at LaG on the 8th floor everyday which are <strong> Ballet, Limon, Graham and Horton.</strong> The memories and times created with each other throughout these rehersals are some that I will remember forever and the final produdct is amazing. The only down sight is that you have to wait 4 years for your first real preformance because we are solely based as a training school and not a preformance school. These weeks rehersing and preforming were probably one of the best weeks of senior year. It is alot of fun so upcoming seniors, be prepared!! "
+        ).show(2000);
+        $("body").css("background-color", "yellow");
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-         $("#mem3").text("Web Development")
+        $("#mem3").css("color", "aliceblue");
+        $("#mem3").text("Web Development");
+        $("body").css("background-color", "pink");
+        
+        
+        
+        
+        
+        
       });
     </script>
-     <img src = "https://www.laguardiahs.org/rotating_images/9239/9239_15_1400_0_34.jpg" width="450">
-    <img src = "https://www.laguardiahs.org/ourpages/auto/2025/1/13/47851608/screenshot%202025-01-13%20at%208_50_50_am.jpg" width="450">
-  <img src = "https://cdn.glitch.global/ff426738-2c49-4be6-9ed5-890e82ccc158/0891c1de-2989-46b1-a362-2dbc76bf87dc.image.png?v=1745233846791" width="450">
+    <img
+      src="https://www.laguardiahs.org/rotating_images/9239/9239_15_1400_0_34.jpg"
+      width="450"
+    />
+    <img
+      src="https://www.laguardiahs.org/ourpages/auto/2025/1/13/47851608/screenshot%202025-01-13%20at%208_50_50_am.jpg"
+      width="450"
+    />
+    <img
+      src="https://cdn.glitch.global/ff426738-2c49-4be6-9ed5-890e82ccc158/0891c1de-2989-46b1-a362-2dbc76bf87dc.image.png?v=1745233846791"
+      width="450"
+    />
   </body>
 </html>
 
